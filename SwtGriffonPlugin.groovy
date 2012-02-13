@@ -18,13 +18,15 @@
  * @author Andres Almiray
  */
 class SwtGriffonPlugin {
-    String version = '0.9.5-SNAPSHOT'
-    String griffonVersion = '0.9.5-SNAPSHOT > *'
+    String version = '0.9.5'
+    String griffonVersion = '0.9.5 > *'
     Map dependsOn = [:]
     List pluginIncludes = []
     String license = 'Apache Software License 2.0'
     List toolkits = ['swt']
     List platforms = []
+    String documentation = ''
+    String source = 'https://github.com/griffon/griffon-swt-plugin'
 
     List authors = [
         [
@@ -46,7 +48,4 @@ There's no special configuration for this plugin.
 
 [1]: http://groovy.codehaus.org/GroovySWT
 '''
-
-    // URL to the plugin's documentation
-    def documentation = 'http://griffon.codehaus.org/Swt+Plugin'
 }

@@ -20,7 +20,7 @@ import griffon.util.Metadata
  * @author Andres Almiray
  */
 
-updateMetadata('app.toolkits': 'swt')
+updateMetadata('app.toolkit': 'swt')
 
 // check to see if we already have a SwtBuilder
 configText = """root.'groovy.swt.SwtBuilder'.view = '*'"""
