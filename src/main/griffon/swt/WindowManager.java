@@ -200,7 +200,7 @@ public final class WindowManager implements ShutdownHandler {
         if (window == null) {
             return;
         }
-        app.execSync(new Runnable() {
+        app.execInsideUISync(new Runnable() {
             public void run() {
                 app.resolveWindowDisplayHandler().show(window, app);
             }
@@ -218,7 +218,7 @@ public final class WindowManager implements ShutdownHandler {
         if (window == null) {
             return;
         }
-        app.execSync(new Runnable() {
+        app.execInsideUISync(new Runnable() {
             public void run() {
                 app.resolveWindowDisplayHandler().hide(window, app);
             }
