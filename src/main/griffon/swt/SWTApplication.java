@@ -19,7 +19,7 @@ package griffon.swt;
 /**
  * @author Andres Almiray
  */
-class SWTApplication extends AbstractSWTGriffonApplication {
+public class SWTApplication extends AbstractSWTGriffonApplication {
     public SWTApplication() {
         this(AbstractSWTGriffonApplication.EMPTY_ARGS);
     }

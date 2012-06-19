@@ -18,10 +18,14 @@
  * @author Andres Almiray
  */
 
+import static griffon.util.GriffonApplicationUtils.isMacOSX
+
 eventCreateConfigEnd = {
     buildConfig.griffon.application.mainClass = 'griffon.swt.SWTApplication'
     if(!buildConfig.griffon.app.javaOpts) buildConfig.griffon.app.javaOpts = []
-    buildConfig.griffon.app.javaOpts << '-XstartOnFirstThread'
+    if(isMacOSX && !buildConfig.griffon.app.javaOpts.contains('-XstartOnFirstThread')) {
+        buildConfig.griffon.app.javaOpts << '-XstartOnFirstThread'
+    }
     
     if(!isPluginProject) {
         def runtimeConfigFile = new File("${basedir}/griffon-app/conf/Config.groovy")

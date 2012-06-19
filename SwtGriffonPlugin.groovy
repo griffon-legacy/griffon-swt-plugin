@@ -18,8 +18,8 @@
  * @author Andres Almiray
  */
 class SwtGriffonPlugin {
-    String version = '0.9.5'
-    String griffonVersion = '0.9.5 > *'
+    String version = '0.9.6'
+    String griffonVersion = '1.0.0 > *'
     Map dependsOn = [:]
     List pluginIncludes = []
     String license = 'Apache Software License 2.0'
@@ -39,8 +39,11 @@ class SwtGriffonPlugin {
 Enables the usage of SWT based components in Views.
 
 Usage
-----
-TBD
+-----
+This plugin applies some changes to the runtime configuration when the applicaiton is run for the first time. It's possible that
+this configuration is not honored the first time the application is started resulting in a frozen application. If so, then simply
+quit and restart. The problem will not appear again.
+
 
 Configuration
 -------------
