@@ -18,7 +18,7 @@
  * @author Andres Almiray
  */
 class SwtGriffonPlugin {
-    String version = '0.9.6'
+    String version = '1.0.0'
     String griffonVersion = '1.0.0 > *'
     Map dependsOn = [:]
     List pluginIncludes = []
@@ -40,9 +40,22 @@ Enables the usage of SWT based components in Views.
 
 Usage
 -----
-This plugin applies some changes to the runtime configuration when the applicaiton is run for the first time. It's possible that
+This plugin applies some changes to the runtime configuration when the application is run for the first time. It's possible that
 this configuration is not honored the first time the application is started resulting in a frozen application. If so, then simply
 quit and restart. The problem will not appear again.
+
+
+The following nodes will become available on a View script upon installing this plugin
+
+| *Node*    | *Type*                           |
+| --------- | -------------------------------- |
+| migLayout | `net.miginfocom.swt.MigLayout` |
+
+This node supports the following properties
+
+ * **layoutConstraints** - defines general constraints
+ * **columnConstraints** - defines constraints applicable to columns only
+ * **rowConstraints** - defines constraints applicable to rows only
 
 
 Configuration

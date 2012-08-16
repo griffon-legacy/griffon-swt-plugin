@@ -12,7 +12,8 @@ griffon.project.dependency.resolution = {
     }
     dependencies {
         compile('org.codehaus.groovy:groovy-swt:0.5.2',
-                'com.miglayout:miglayout:3.7.3.1',
+                'com.miglayout:miglayout-core:4.2',
+                'com.miglayout:miglayout-swt:4.2',
                 'org.eclipse:org.apache.commons.logging:1.0.4.v200904062259',
                 'org.eclipse:org.eclipse.core.commands:3.5.0.I20090525_2000',
                 'org.eclipse:org.eclipse.core.databinding.beans:1.2.0.I20090525_2000',

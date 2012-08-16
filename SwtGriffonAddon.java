@@ -16,6 +16,8 @@
 
 import griffon.util.ApplicationHolder;
 import griffon.swt.factory.ApplicationFactory;
+import groovy.swt.factory.LayoutFactory;
+import net.miginfocom.swt.MigLayout;
 import org.codehaus.griffon.runtime.core.AbstractGriffonAddon;
 
 /**
@@ -25,5 +27,6 @@ public class SwtGriffonAddon extends AbstractGriffonAddon {
     public SwtGriffonAddon() {
         super(ApplicationHolder.getApplication());
         factories.put("application", new ApplicationFactory());
+        factories.put("migLayout", new LayoutFactory(MigLayout.class));
     }
 }
