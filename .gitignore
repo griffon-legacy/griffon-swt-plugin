@@ -1,2 +1,7 @@
 target
 release_notes.md
+.idea
+swt-griffonPluginFixes.iml
+swt-griffonPlugins.iml
+swt.iml
+release_notes.md

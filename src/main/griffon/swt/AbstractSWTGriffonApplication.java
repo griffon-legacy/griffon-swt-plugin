@@ -54,7 +54,11 @@ public abstract class AbstractSWTGriffonApplication extends AbstractGriffonAppli
         UIThreadManager.getInstance().setUIThreadHandler(getUIThreadHandler());
         addShutdownHandler(windowManager);
     }
-    
+
+    public Display getDisplay() {
+        return defaultDisplay;
+    }
+
     public WindowManager getWindowManager() {
         return windowManager;
     }

@@ -1,0 +1,4 @@
+org.eclipse.swt.graphics.Color = griffon.swt.editors.ColorPropertyEditor
+org.eclipse.swt.graphics.Point = griffon.swt.editors.PointPropertyEditor
+org.eclipse.swt.graphics.Rectangle = griffon.swt.editors.RectanglePropertyEditor
+org.eclipse.swt.graphics.Image = griffon.swt.editors.ImagePropertyEditor

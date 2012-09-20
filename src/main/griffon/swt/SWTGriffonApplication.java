@@ -17,6 +17,7 @@
 package griffon.swt;
 
 import griffon.core.GriffonApplication;
+import org.eclipse.swt.widgets.Display;
 
 /**
  * Defines an additional contract that all SWT based application should follow.
@@ -65,4 +66,6 @@ public interface SWTGriffonApplication extends GriffonApplication {
      * @return a non-null WindowDisplayHandler instance.
      */
     WindowDisplayHandler resolveWindowDisplayHandler();
+
+    Display getDisplay();
 }

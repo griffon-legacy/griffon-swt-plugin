@@ -18,8 +18,8 @@
  * @author Andres Almiray
  */
 class SwtGriffonPlugin {
-    String version = '1.0.0'
-    String griffonVersion = '1.0.0 > *'
+    String version = '1.1.0'
+    String griffonVersion = '1.1.0 > *'
     Map dependsOn = [:]
     List pluginIncludes = []
     String license = 'Apache Software License 2.0'
